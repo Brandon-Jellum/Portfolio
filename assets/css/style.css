@@ -7,6 +7,13 @@ img {
     width: 10%;
 }
 
+h1 {
+    text-align: center;   
+}
+
+p{
+    text-align: center;
+}
 body {
     background: rgb(37, 34, 56);
     display: flex;
@@ -28,11 +35,12 @@ span {
 }
 
 nav {
+    display: flex;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxiOHBbJHBOZAex1ZJrrJ8ommyDcjRkfT18w&usqp=CAU);
+    
 }
 .nav-item {
-    text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
     margin-right: 2em;
     font-size: large;
     font-weight: 600;
@@ -66,22 +74,23 @@ nav {
 
 .portfolio-item {
     font-weight: bold;
-    background: rgb(71, 71, 150);  
+    background: rgb(169, 169, 172);  
     display: flex;
     align-items: center;
     justify-content: center; 
 }
 
+/*start img within grid layout and animation*/
 .portfolio-item.large {
      grid-row: span 15;
      grid-column: span 4;
 }
-/*start img within grid layout and animation*/
+
 .one{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRQ17a3c5iDV-hnmpDNd7IDq_bXDZTPnQqGhA&usqp=CAU);
-    color: lightgrey;
+    background-image: url(https://lh3.googleusercontent.com/33aokh76P505XhrPgH9fDEHtgRwb8trOIW8DtC0bVNtqsOa6wJUPdPTEcGeCv9l8W6iYHD8=s170);
+    color: black;
     background-size: cover;
-    background-position: top left;
+    background-position: left;
     transition: all ease-in-out 300ms;
     position: relative;
 }
@@ -103,12 +112,16 @@ nav {
 }
 
 .two{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVXjXK2vVtDwVHlF5gvmFO9Cqeq-ZNa3Rj3g&usqp=CAU);
-    color: lightgrey;
+    background-image: url(https://vignette.wikia.nocookie.net/riffipedia/images/8/8c/Mastodon-2014.jpg/revision/latest?cb=20170321005333);
+    color: black;
     background-size: cover;
     background-position: top center;
     transition: all ease-in-out 300ms;
     position: relative;
+}
+.portfolio-item.large {
+    grid-row: span 30;
+    grid-column: span 4;
 }
 
 .two::before{
@@ -129,12 +142,16 @@ nav {
 }
 
 .three{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcREdQ30XOGCpVAQKVaRdUvng4q8fT2RzGU-CQ&usqp=CAU);
-    color: lightgrey;
+    background-image: url(https://lh3.googleusercontent.com/npgF7Ul0PyTfMLQ9IH5bBat_jthKpVj7Vxg1Zd9X9D1xekVw-NlHZve2kws7sAEwpgRBgg=s128);
+    color: black;
     background-size: cover;
     background-position: top left;
     transition: all ease-in-out 300ms;
     position: relative;
+}
+.portfolio-item.medium {
+    grid-row: span 15;
+    grid-column: span 4;
 }
 
 .three::before{
@@ -153,17 +170,11 @@ nav {
 .three:hover::before{
     opacity: 0.2;
 }
-
 /*end img within grid layout and animation*/
 
-.portfolio-item.medium {
-    grid-row: span 15;
-    grid-column: span 4;
-}
+footer .p {
+    text-align: center;
 
-.portfolio-item.small {
-    grid-row: span 30;
-    grid-column: span 4;
 }
 
 
